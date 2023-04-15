@@ -1,18 +1,40 @@
 
-
-body{
+/* default styles for body */
+body {
+  background-color: rgb(171, 182, 239);
   margin: 30px;
+  color: #f5f5f5;
+}
 
-  
+/* media query for iPhone 12 Pro Max (portrait) */
+@media only screen 
+  and (device-width: 428px) 
+  and (device-height: 926px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+
+  /* adjust margins for iPhone 12 Pro Max */
+  body {
+    margin: 10px;
+  }
+}
+
+.Container-fluid {
+  width: fit-content; /* set width to content size */
+  margin: 0 auto; /* center horizontally */
 }
 
 
 
 .navbar {
     background-color: #000000c6;
+    text-align: center;
+    border-radius: 1%;
+  
   }
   
   .navbar-brand {
+    
     font-size: 1.5rem;
     color: #fff !important; /* This is set to override bootstrap default text color */
   }
@@ -30,10 +52,29 @@ body{
     color: #fff;
   }
 
-  .table{
+  .table {
     margin-top: 90px;
     border: 2px solid black;
+    width: 100%;
+    border-collapse: collapse;
   }
+  
+  .table th,
+  .table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .table th {
+    font-weight: 700;
+    background-color: #f2f2f2;
+  }
+  
+  .table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
 
   td img {
     display: flex;
@@ -42,3 +83,32 @@ body{
     height: 20px; /* let the height adjust automatically based on the aspect ratio */
   }
   
+
+
+  @media only screen and (max-width: 428px) {
+    .card-group {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .card {
+      width: 100%;
+      margin-bottom: 10px;
+      border: none;
+    }
+  
+    .card-header {
+      background-color: #f5f5f5;
+      font-weight: bold;
+      color: black;
+      
+    }
+  
+    .card-body {
+      padding: 10px;
+      border: 1px solid #dee2e6;
+    }
+  }
+  
+
+ 
