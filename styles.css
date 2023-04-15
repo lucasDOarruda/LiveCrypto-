@@ -1,16 +1,11 @@
+
+
 body{
   margin: 30px;
 
   
 }
-@media only screen 
-and (min-device-width: 428px) 
-and (max-device-width: 926px) 
-and (-webkit-device-pixel-ratio: 3) { 
 
-/* Enter your styles here */
-
-}
 
 
 .navbar {
@@ -37,4 +32,13 @@ and (-webkit-device-pixel-ratio: 3) {
 
   .table{
     margin-top: 90px;
+    border: 2px solid black;
   }
+
+  td img {
+    display: flex;
+    align-content: center;
+    width: 20px; /* set the desired width */
+    height: 20px; /* let the height adjust automatically based on the aspect ratio */
+  }
+  
