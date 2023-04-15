@@ -12,7 +12,27 @@ fetch(`${proxyUrl}${baseUrl}` , {
   }).then((response)=>{
     if (response.ok) {
       response.json().then((json) => {
-        console.log(json)
+        console.log(json.data.coins)
+
+        let coinsData = json.data.coins
+        
+        if(coinsData.length > 0 ){
+          var cryptoCoins = ""
+        }
+
+          //for loop starts
+
+          coinsData.forEach((coins) => {
+            cryptoCoins += "<tr>"
+            cryptoCoins += `<td> ${coins.uuid} </td>`;
+            cryptoCoins += `<td> ${coins.btcPrice} <td>`;
+            cryptoCoins += `<td> ${coins.rank} </td>`;
+            cryptoCoins += `<td> ${coins.name} </td>`;
+            cryptoCoins += `<td> ${coins.price} </td>`;cryptoCoins += `<td> ${coins.symbol} </td>`; "<tr>"
+      
+          })
+                document.getElementById("data").innerHTML =cryptoCoins
+        
       })
     }
     
