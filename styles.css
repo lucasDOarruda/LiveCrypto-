@@ -1,7 +1,16 @@
 body{
   margin: 30px;
-}
 
+  
+}
+@media only screen 
+and (min-device-width: 428px) 
+and (max-device-width: 926px) 
+and (-webkit-device-pixel-ratio: 3) { 
+
+/* Enter your styles here */
+
+}
 
 
 .navbar {
