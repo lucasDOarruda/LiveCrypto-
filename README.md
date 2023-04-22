@@ -4,7 +4,7 @@ LiveCrypto is a webpage that displays cryptocurrency data in a table format from
 
 Technologies Used
 HTML5
-Bootstrap 5.0.0-beta3
+CSS
 JavaScript
 Features
 Displays real-time cryptocurrency data
