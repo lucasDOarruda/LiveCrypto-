@@ -9,6 +9,8 @@ opacity: 1;
 background-image:  linear-gradient(30deg, #5509cc 12%, transparent 12.5%, transparent 87%, #5509cc 87.5%, #5509cc), linear-gradient(150deg, #5509cc 12%, transparent 12.5%, transparent 87%, #5509cc 87.5%, #5509cc), linear-gradient(30deg, #5509cc 12%, transparent 12.5%, transparent 87%, #5509cc 87.5%, #5509cc), linear-gradient(150deg, #5509cc 12%, transparent 12.5%, transparent 87%, #5509cc 87.5%, #5509cc), linear-gradient(60deg, #5509cc77 25%, transparent 25.5%, transparent 75%, #5509cc77 75%, #5509cc77), linear-gradient(60deg, #5509cc77 25%, transparent 25.5%, transparent 75%, #5509cc77 75%, #5509cc77);
 background-size: 80px 140px;
 background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+
+
 }
 
 /* media query for iPhone 12 Pro Max (portrait) */
@@ -22,6 +24,7 @@ background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
   body {
     margin: 10px;
     
+    
   }
 }
 
@@ -33,20 +36,27 @@ background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
 
 
 .navbar {
-    background-color: #000000c6;
+    left: 25%;
+    background-color: #00000000;
     text-align: center;
-    border-radius: 1%;
-  
+    width: 50%;
+    backdrop-filter: blur(3px);
+    border-radius: 25px;
+background: #ff6f6c00;
+box-shadow:  1px -2px 5px #000000,
+             -2px 1px 5px #efefef;
+             
   }
   
   .navbar-brand {
-    
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
-    color: #fff !important; /* This is set to override bootstrap default text color */
+    color: #fff !important; 
+    
   }
   
   .form-control {
-    background-color: #3f3c3c;
+    background-color: #3f3c3c7c;
     border: none;
     border-radius: 0;
     color: #fff;
@@ -59,10 +69,14 @@ background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
   }
 
   .table{
+    
     margin-top: 90px;
-    border: 2px solid rgb(244, 240, 240);
+    border: 5px ridge orange;
     color: white;
-    background-color: #0d0f3ae4;
+    backdrop-filter: blur(4px);
+background: #0a0c4fad;
+box-shadow:  5px -5px 0px #07073c,
+             -5px 5px 0px #050522;
     
   }
 
@@ -75,30 +89,6 @@ background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
   
 
 
-  @media only screen and (max-width: 428px) {
-    .card-group {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  
-    .card {
-      width: 100%;
-      margin-bottom: 10px;
-      border: none;
-    }
-  
-    .card-header {
-      background-color: #f5f5f5;
-      font-weight: bold;
-      color: black;
-      
-    }
-  
-    .card-body {
-      padding: 10px;
-      border: 1px solid #dee2e6;
-    }
-  }
-  
+ 
 
  

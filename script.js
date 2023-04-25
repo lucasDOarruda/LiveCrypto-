@@ -22,13 +22,13 @@ fetch(`${proxyUrl}${baseUrl}`, {
       //For Loop Starts
       coinsData.forEach((coin) => {
         cryptoCoin += "<tr>";
+        cryptoCoin += `<td><img src="${coin.iconUrl}" alt="${coin.symbol}"/> ${coin.symbol}</td>`;"<tr>";
         cryptoCoin += `<td> ${coin.uuid} </td>`;
         cryptoCoin += `<td> ${coin.btcPrice} </td>`;
         cryptoCoin += `<td> ${coin.rank}</td>`;
         cryptoCoin += `<td> ${coin.tier} </td>`;
-        cryptoCoin += `<td> ${coin.name}</td>`;
         cryptoCoin += `<td> $${Math.round(coin.price)} Billion</td>`;
-        cryptoCoin += `<td><img src="${coin.iconUrl}" alt="${coin.symbol}"/> ${coin.symbol}</td>`;"<tr>";
+        
       });
       //For Loop Ends
       document.getElementById("data").innerHTML = cryptoCoin;
@@ -38,3 +38,6 @@ fetch(`${proxyUrl}${baseUrl}`, {
 .catch((error) => {
   console.log(error);
 });
+
+
+
